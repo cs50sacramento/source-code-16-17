@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    printf("Oh hai!\n");
-    printf("What's your name?\n");
+    printf("Oh hai!"\n);
+    printf("What's your name?\n")
     string userName = GetString();
-    printf("Nice to meet you! Have a great day, %s!\n", userName);
+    print("Nice to meet you! Have a great day, %s!\n", userName);
 }

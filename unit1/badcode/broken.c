@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include stdio.h
 
-int main(void)
+void main(void)
 {
-    printf("Hello, world!\nThis is CS50.\n");
+    printf("Hello, world!\nThis is CS50.\n);
 }
