@@ -30,4 +30,14 @@ int main(void)
     {
         printf("Zero!\n");
     }
+    
+    // test and print out even/odd (bonus modulo test!)
+    if (userNum % 2 == 0)
+    {
+        printf("Even!\n");
+    }
+    else
+    {
+        printf("Odd!\n");
+    }
 }
