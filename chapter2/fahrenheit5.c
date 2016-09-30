@@ -27,7 +27,7 @@ int main(void)
     }
     else
     {
-        // get temp in C from user
+        // get temp in F from user
         printf("F: ");
         float tempF = GetFloat();
         

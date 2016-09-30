@@ -17,6 +17,6 @@ int main(void)
     // just for fun...convert back to C
     float newTempC = fToC(tempF);
     
-    // print temp in F
+    // print temp in C
     printf("C: %.1f\n", newTempC);
 }
