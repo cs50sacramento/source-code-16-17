@@ -28,11 +28,15 @@ int main(int argc, string argv[])
         // print the arguments themselves stored in argv[]
         printf("argv[%d]: %s\n", i, argv[i]);
         
-        // print individuals chearacters of each argv[] (two-dimensional array)
-        for (int j = 0; j < strlen(argv[i]); j++)
+        // print individuals characters of each argv[] (two-dimensional array)
+        for (int j = 0, k = strlen(argv[i]); j < k; j++)
         {
             printf("argv[%d][%d]: %c\n", i, j, argv[i][j]);
         }
-        printf("\n");
+        
+        if (i != (argc-1))
+        {
+            printf("\n");
+        }
     }
 }
