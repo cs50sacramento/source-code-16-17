@@ -7,6 +7,9 @@ int main(void)
     // store word in string
     string hello = "hello";
     
+    // print whole string
+    printf("%s\n", hello);
+    
     // index through word, printing one letter per line
     for (int i = 0, j = strlen(hello); i < j; i++)
     {

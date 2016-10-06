@@ -7,14 +7,15 @@ int main(void)
     int birthday[3];
     
     // initialize each element of array
-    birthday[0] = 11;
-    birthday[1] = 25;
-    birthday[2] = 86;
+    birthday[0] = 10;
+    birthday[1] = 16;
+    birthday[2] = 77;
     // birthday[3] = 42;        // can't do this!
+    // int birthday[3] = { 10, 16, 77 };
     
     // update values
-    birthday[2] = birthday[0] + birthday[1];    // now 36
-    birthday[0] = birthday[1] - birthday[0];    // now 14
+    birthday[2] = birthday[0] + birthday[1];    // now 26
+    birthday[0] = birthday[1] - birthday[0];    // now 6
     
     // determine size of array
     int birthdaysize = sizeof(birthday);
