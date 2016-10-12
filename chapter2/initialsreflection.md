@@ -1,4 +1,4 @@
-# PSET1 REFLECTION
+# INITIALS.C REFLECTION
 #### With thanks to Douglas Kiang of the CS50 AP community for the idea and the structure of this activity.
 
 This reflection activity is designed to give you the opportunity to take a step back and think about your thinking process as a programmer. As I have said often, I don't care so much _when_ you learn a concept but _that_ you learn it.
@@ -19,7 +19,9 @@ Part of beginning to think like a programmer means taking that metacognitive lea
 Below is a sample for my `initials.c`:
 #### initials.c
 9/27/16 13:22:30: I realized that `s` was an awful name for a variable. It didn't make it clear what kind of information I was storing in that string, so I changed it to `string name`.
+
 9/27/16 13:23:26: I noticed that my return type for capitalize should be `void`, not `int`, since I'm merely printing a letter, not handing any information back to main via `return`.
+
 10/12/16 7:58:41: I simplified my code with functions from `<ctype.h>`. Previously, I was using ASCII values to determine case of letters, but I decided that it would make my code more readable to simply use pre-defined functions, such as `isupper`, instead.
 
 Don't just repeat what you did. I want to know what your "a-ha" was, as in "I realized... " or "I figured out..." or some similiar phrase.
