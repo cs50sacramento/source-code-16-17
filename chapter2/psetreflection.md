@@ -3,7 +3,7 @@
 
 As I have said often, I don't care so much _when_ you learn a concept but _that_ you learn it.
 This reflection activity is designed to give you the opportunity to take a step back and think about your thinking process as a programmer.
-
+---
 Here's what you should do:
 * Create a document called `initials.txt` via the `touch` command.
 * Open `initials.c` and select "File > Show File Revision History".
