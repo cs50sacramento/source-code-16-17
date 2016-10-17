@@ -9,7 +9,7 @@ int main(int argc, string argv[])
         printf("Usage: ./helloargv <first name>\n");
         return 1;
     }
-    
+
     // greet user
     printf("Hello, %s!\n", argv[1]);
 }

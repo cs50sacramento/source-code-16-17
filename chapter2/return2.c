@@ -9,7 +9,7 @@ int main(int argc, string argv[])
         printf("Usage: ./return2\n");
         printf("Do not supply additional command line arguments like \"%s\".\n", argv[1]);
         printf("Please try again.\n");
-        return 1;
+        return 7;
     }
     
     // print hello world message
