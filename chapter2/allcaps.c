@@ -22,7 +22,7 @@ int main(int argc, string argv[])
     // separate arguments by a space
     printf(" ");
     
-    // iterate through argv[0] to capitalize each letter
+    // iterate through argv[1] to capitalize each letter
     for (int i = 0, j = strlen(argv[1]); i < j; i++)
     {
         printf("%c", toupper(argv[1][i]));

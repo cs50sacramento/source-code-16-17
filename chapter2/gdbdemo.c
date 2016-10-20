@@ -7,7 +7,9 @@ int main(void)
     
     int num = GetInt();
     
+    // printf("BEFORE SQUARING: %d.\n", num);
     num *= num;
+    // printf("AFTER SQUARING: %d.\n", num);
     
     printf("Your number squared is %d.\n", num);
 }
