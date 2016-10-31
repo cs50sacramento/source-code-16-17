@@ -14,7 +14,7 @@
 int main(void)
 {
 	// declare array of 10 numbers
-	int sorted[LENGTH] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int haystack[LENGTH] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	
 	// get needle to find in haystack
 	printf("Tell me the integer you are looking for: ");
@@ -33,18 +33,18 @@ int main(void)
 		int mid = (min + max) / 2;
 		
 		// check if needle is at midpoint
-		if (needle == sorted[mid])
+		if (needle == haystack[mid])
 		{
 			printf("Needle found at %d!\n", mid);
 			return 0;
 		}
 		// if needle is greater than midpoint, update minimum index
-		else if (needle > sorted[mid])
+		else if (needle > haystack[mid])
 		{
 			min = mid + 1;
 		}
 		// if needle is less than midpoint, update maximum index
-		else if (needle < sorted[mid])
+		else if (needle < haystack[mid])
 		{
 			max = mid - 1;
 		}

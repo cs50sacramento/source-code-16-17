@@ -24,11 +24,18 @@ int main(void)
 	}
 	printf("\n");
 
-	// selection sort
+	/* selection sort */
+	// track total number of swaps (just for fun)
+	int totalSwaps = 0;
+	
+	// iterate through numbers in unsorted array
+	// stop at second-to-last index value since that will make j the last index value
 	for (int i = 0; i < LENGTH - 1; i++)
     {
+    	// set index of minimum value to i
         int min = i;
         
+        // iterate through rest of numbers in list to update minimum value of necessary
         for (int j = i + 1; j < LENGTH; j++)
         {
             if (unsorted[j] < unsorted[min])
@@ -37,11 +44,13 @@ int main(void)
             }
         }
         
+        // swap positions of i and minimum if i isn't already the minimum
         if (min != i)
         {
             int temp = unsorted[min];
             unsorted[min] = unsorted[i];
             unsorted[i] = temp;
+            totalSwaps++;
         }
     }
 	
@@ -51,5 +60,5 @@ int main(void)
 	{
 		printf("unsorted[%d]: %d\n", i, unsorted[i]);
 	}
-	printf("\n");
+	printf("\nTotal number of swaps: %d\n", totalSwaps);
 }

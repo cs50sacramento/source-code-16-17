@@ -24,20 +24,31 @@ int main(void)
 	}
 	printf("\n");
 
-	// insertion sort
+	/* insertion sort */
+	// track total number of swaps (just for fun)
+	int totalSwaps = 0;
+	
+	// iterate through numbers in the unsorted list (i.e. start at index 1)
 	for (int i = 1; i < LENGTH; i++)
     {
-        int value = unsorted[i];
-        int sorted = i;
+    	// set second item in the array as the first unsorted item
+    	// by default, unsorted[0] is already a sorted array of one item
+        int sortValue = unsorted[i];
         
-        while (sorted > 0 && unsorted[sorted-1] > value)
+        // set index of second item in the array as the first unsorted item
+        int sortIndex = i;
+        
+        // move sortValue down the list so long as two conditions are met:
+        // 1. sortIndex does not go below 1 since it's being compared with the number to its left
+        // 2. sortValue is less than the value to its left in the array
+        while (sortIndex > 0 && unsorted[sortIndex - 1] > sortValue)
         {
-            int temp = unsorted[sorted-1];
-            unsorted[sorted-1] = unsorted[sorted];
-            unsorted[sorted] = temp;
-            sorted -= 1;
+            int temp = unsorted[sortIndex - 1];
+            unsorted[sortIndex - 1] = unsorted[sortIndex];
+            unsorted[sortIndex] = temp;
+            sortIndex--;
+            totalSwaps++;
         }
-        unsorted[sorted] = value;
     }
 	
 	// print sorted array
@@ -46,5 +57,5 @@ int main(void)
 	{
 		printf("unsorted[%d]: %d\n", i, unsorted[i]);
 	}
-	printf("\n");
+	printf("\nTotal number of swaps: %d\n", totalSwaps);
 }

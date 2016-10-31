@@ -24,20 +24,32 @@ int main(void)
 	}
 	printf("\n");
 	
-	// bubble sort
+	/* bubble sort */
+	// set swaps to any non-zero value
 	int swaps = -1;
 	
+	// track total number of swaps (just for fun)
+	int totalSwaps = 0;
+	
+	// repeat until no more swaps (i.e. list is sorted)
 	while (swaps != 0)
 	{
+		// set swaps to zero
 		swaps = 0;
+		
+		// iterate through numbers in unsorted array
 		for (int i = 0; i < LENGTH - 1; i++)
 		{
+			// if a number is greater than the number on its right, swap their positions
 			if (unsorted[i] > unsorted[i+1])
 			{
 				int temp = unsorted[i];
 				unsorted[i] = unsorted[i+1];
 				unsorted[i+1] = temp; 
+				
+				// increment swaps variable for each swap
 				swaps++;
+				totalSwaps++;
 			}
 		}
 	}
@@ -48,5 +60,5 @@ int main(void)
 	{
 		printf("unsorted[%d]: %d\n", i, unsorted[i]);
 	}
-	printf("\n");
+	printf("\nTotal number of swaps: %d\n", totalSwaps);
 }
