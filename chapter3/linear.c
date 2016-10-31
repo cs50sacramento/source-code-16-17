@@ -23,13 +23,17 @@ int main(void)
 	// iterate through list to find item
 	for (int i = 0; i < LENGTH; i++)
 	{
+		// check if needle is found at index
+		// use return to end program if necessary
 		if (needle == haystack[i])
 		{
 			printf("Needle found at index %d!\n", i);
 			return 0;
 		}
+		// if needle not found, increment i
 	}
 	
+	// inform user that needle isn't in haystack
 	printf("Needle not in haystack!\n");
 	return 1;
 }
