@@ -35,15 +35,15 @@ int main(void)
 		// check if needle is at midpoint
 		if (needle == haystack[mid])
 		{
-			printf("Needle found at %d!\n", mid);
+			printf("Needle in haystack!\n");
 			return 0;
 		}
-		// if needle is greater than midpoint, update minimum index
+		// else if needle is greater than midpoint, update minimum index
 		else if (needle > haystack[mid])
 		{
 			min = mid + 1;
 		}
-		// if needle is less than midpoint, update maximum index
+		// else if needle is less than midpoint, update maximum index
 		else if (needle < haystack[mid])
 		{
 			max = mid - 1;
@@ -51,6 +51,6 @@ int main(void)
 	}
 	
 	// inform user that needle isn't in haystack
-	printf("Needle not in haystack!\n");
+	printf("Needle NOT in haystack!\n");
 	return 1;
 }

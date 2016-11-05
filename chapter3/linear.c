@@ -27,13 +27,13 @@ int main(void)
 		// use return to end program if necessary
 		if (needle == haystack[i])
 		{
-			printf("Needle found at index %d!\n", i);
+			printf("Needle in haystack!\n");
 			return 0;
 		}
 		// if needle not found, increment i
 	}
 	
 	// inform user that needle isn't in haystack
-	printf("Needle not in haystack!\n");
+	printf("Needle NOT in haystack!\n");
 	return 1;
 }
