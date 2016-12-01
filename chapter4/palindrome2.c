@@ -13,8 +13,8 @@
 
 bool palindrome(string phrase, int start, int length)
 {
-    // only one letter will also be a palindrome
-    if (length == 1)
+    // base case: only one or fewer letters is automatically a palindrome
+    if (length <= 1)
     {
         return true;
     }
@@ -28,7 +28,6 @@ bool palindrome(string phrase, int start, int length)
         return false;
     }
 }
-
 string removeSpaces(string phrase)
 {
     // determine string length (with spaces)
