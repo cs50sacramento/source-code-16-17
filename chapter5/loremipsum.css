@@ -1,3 +1,14 @@
 p {
     font-size:28px;
 }
+.lorem-text {
+    text-align:center;
+    background-color:#aaaaaa;
+    color:green;
+}
+#par-one {
+    font-family:Monospace;
+}
+#par-two {
+    font-family:Serif;
+}
