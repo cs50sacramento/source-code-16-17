@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <cs50.h>
+
+// function prototypes
+void posNeg(int a);
+void evenOdd(int b);
+
+int main(void)
+{
+    // prompt user for input
+    printf("Enter an integer: ");
+    
+    // store input in variable
+    int userNum = GetInt();
+    
+    posNeg(userNum);
+    
+    evenOdd(userNum);
+}
+    
+void posNeg(int x)
+{
+    // test and print out sign of number
+    if (x > 0)
+    {
+        printf("Positive!\n");
+    }
+    else if (x < 0)
+    {
+        printf("Negative!\n");
+    }
+    else
+    {
+        printf("Zero!\n");
+    }
+}
+
+void evenOdd(int x)
+{
+    // test and print out even/odd (bonus modulo test!)
+    if (x % 2 == 0)
+    {
+        printf("Even!\n");
+    }
+    else
+    {
+        printf("Odd!\n");
+    }
+}
