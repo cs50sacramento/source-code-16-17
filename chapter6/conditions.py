@@ -18,4 +18,4 @@ elif percent >= 70:
 elif percent >= 0:
     print("You got a D!")
 else:
-    print("You somehow got a negative grade. Sad.")
+    print("You somehow got a negative grade. SAD.")

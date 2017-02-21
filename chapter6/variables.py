@@ -1,4 +1,5 @@
-count = 2
+count = 3
 count = 8
 x = count
-print("count is {} and x is {}".format(count,x))
+count += 1
+print("count is {} and x is {}".format(count, x))
