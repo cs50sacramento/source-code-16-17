@@ -5,7 +5,7 @@ with open("austen.txt") as lines:
 print()
 print()
 
-# prints words that start with i
+# prints words that start with a
 start_with_a = []
 
 with open("austen.txt") as lines:
@@ -42,14 +42,16 @@ opening_sentence_2_joined = " ".join(opening_sentence_2)
 print(opening_sentence_2_joined)
 print()
 
-# prompt for feedback
+# prompt for user input
 user_word = input("Give me a word, and I'll tell you if it's in the opening sentence of Pride and Prejudice: ")
 
+# determine if user input in sentence
 if user_word in opening_sentence_2:
     print("Yep!")
 else:
     print("Nope!")
 
+# count occurrences of that word
 print("Here's how many times it appears in the sentence: ", end="")
 count = 0
 for word in opening_sentence_2:
