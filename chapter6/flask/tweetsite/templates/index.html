@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tweet
+{% endblock %}
+
+{% block main %}
+<h3>This is a simple tweet form.</h3>
+<form action="{{ url_for('index') }}" method="post">
+    <fieldset>
+    <div class="form-group">
+        <input name="tweet" type="text" size="140" placeholder="Text to tweet">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-default" type="submit">
+            <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+            Tweet
+        </button>
+    </div>
+    </fieldset>
+</form>
+{% endblock %}
