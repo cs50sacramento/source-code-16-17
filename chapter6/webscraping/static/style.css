@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    font: Helvetica;
+    color: gray;
+}
+#hidden {
+    color: white;
+    font-family: Georgia;
+}
+#hidden:hover {
+    color: red;
+}
+#text {
+    font-family: Georgia;
+    color: #4169E1;
+}
+table, td, th {
+    border: 1px solid gray;
+}
+.tablerow {
+    text-align: center;
+    color: black;
+}
+h6 {
+    text-align: center;
+    font-family: Arial;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Crossword Fun</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    </head>
+    <body>
+        <h1><i>Cryptic Crosswords</i></h1>
+        <div id="text">
+            <h3>Overview</h3>
+            <p>Cryptic crosswords, or "British crosswords," are enjoyable word puzzles that pose a different challenge from the standard American fare. In cryptics, each clue contains exactly two elements: a definition of a word and wordplay appropriate to that word. After the clue, there is a number indicative of the number of letters in the word and whether the answer is a compound word or a phrase made up of multiple words.</p>
+            <p>This wordplay can consist of a number of elements: homonyms, anagrams, charades, etc. For example, the answer to the clue "New thing in fruit combat (8)" is "Fighting." Fighting is an 8-letter word for "combat"--simple enough. "New thing" tells me I need to rearrange thing in some new way (anagram!) and fit into a fruit. In this case the fruit is a "fig." The wordplay answer looks like this: Fi(ghtin)g. The challenge with each clue is deciphering where the wordplay begins and ends, so too the definition.</p>
+            <p>Here is another example: "Chai killing off a Greek character" (3). Right away, there are several possibilities for what the real word could be: Chai, a Greek character, Greek character, character. I know this because the real word comes at either the beginning or the end of the clue. This is one of the rules of cryptic cluing. There are several three-letter Greek characters, so I'll look at the beginning next. "Chai killing off a" tells me literally what to do: remove the a (kill it off) from chai. This leaves me with "Chi," an appropriate three-letter Greek character.</p>
+            <h3>A Visual Comparison</h3>
+            <table>
+                <tr>
+                    <td class="tablerow">American Crossword</td>
+                    <td class="tablerow">British Cryptic Crossword</td>
+                </tr>
+                <tr>
+                    <td><img alt="American Crossword" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/CrosswordUSA.svg/2000px-CrosswordUSA.svg.png" width="300" height="300"></td>
+                    <td><img alt="British Cryptic Crossword" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/British_crossword.svg/220px-British_crossword.svg.png" width="300" height="300"></td>
+                </tr>
+            </table>
+            <h4>Fun Fact: When you see Ron Swanson solving puzzles in <i>Parks and Rec</i>, he is solving cryptic crosswords.</h4>
+            <img alt="Ron Swanson solving a crossword" src="{{ url_for('static', filename='ron.jpg') }}"> 
+            <br>
+            <h3>Sample Cryptic Clues:</h3>
+            <table>
+                <tr>
+                    <td>Clues</td>
+                    <td>Answers (Hover over to reveal)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Long-winded prof, almost 59 (6)</li>
+                            <li>Possessive dynast's last successor (5)</li>
+                            <li>Stupefied, open umbrella inside (4)</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="hidden">
+                            <li>Prolix</li>
+                            <li>Their</li>
+                            <li>Numb</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <p>Play with the buttons below for more sample clues and answers.</p>
+            <button type="button" onclick="alert('Satirists')">Click for the answer: "Writers like Swift placed with Murdoch and Eliot (9)"</button>
+            <button type="button" onclick="alert('Tabasco')">Click for the answer: "Barium's found in taco sauce (7)"</button>
+            <button type="button" onclick="alert('Sestet')">Click for the answer: "Group of six playing two sets? (6)"</button>
+            <h3>Alan Turing's Cryptic</h3>
+            <p>As part of recruitment efforts to break the Enigma code at Bletchley Park during WWII, the publication <i>The Telegraph</i> published the cryptic below. See how well you can do with it!</p>
+            <img alt="Alan Turing's Cryptic" src="{{ url_for('static', filename='puzzle.jpg') }}" width="368" height="413">
+        </div>
+        <h5>
+            Click <a href="http://www.telegraph.co.uk/history/world-war-two/11151478/Could-you-have-been-a-codebreaker-at-Bletchley-Park.html">here</a> for the solution.<br><br>
+            For more information on cryptics, read <a href="https://www.theguardian.com/lifeandstyle/2014/sep/12/how-to-solve-cryptic-crossword-clues">this guide on how to solve cryptics</a> from The Guardian's website or simply search Google below.
+        </h5>
+        <div id="google-search">
+            <form action="https://www.google.com/search" method="get"> 
+            <input name="q" type="text" value="How to solve cryptic crosswords" size="33"/> 
+            <br/>
+            <input type="submit" value="Search Google"/>
+            <br/>
+            </form> 
+        </div>
+    </body>
+</html>
