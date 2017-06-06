@@ -10,13 +10,12 @@ else:
     print("Table: False")
     
 item = page.select("a")
-'''
 print(item)
 links = []
 for i in range(len(item)):
    links.append(item[i].get("href"))
 print(links)
-'''
+
 if item != []:
     print("Link: True")
 else:
@@ -51,11 +50,18 @@ else:
     print("List: False")
 
 item1 = page.h1
+print(item1)
 item2 = page.h2
+print(item2)
 item3 = page.h3
+#print(item3)
 item4 = page.h4
+print(item4)
+print(item4.getText())
 item5 = page.h5
+#print(item5)
 item6 = page.h6
+#print(item6)
 if item1 != None or item2 != None or item3 != None or item4 != None or item5 != None or item6 != None:
     print("Heading: True")
 else:
@@ -68,13 +74,13 @@ else:
     print("Paragraph: False")
 
 item = page.find_all("img")
-'''
+
 print(item)
 images = []
 for i in range(len(item)):
    images.append(item[i].get("src"))
 print(images)
-'''
+
 if len(item) >= 3:
     print("Image: True")
 else:
